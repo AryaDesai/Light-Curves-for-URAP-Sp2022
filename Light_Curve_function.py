@@ -3,8 +3,7 @@ import numpy as np
 import scipy.optimize
 import pandas as pd
 
-def light_curve(starname: str, band_filter: str):
-     #starname and band_filter must be strings, with the starname being a csv file.
+def light_curve(starname: str, band_filter: str): #starname and band_filter must be strings, with the starname being a csv file.
     star = pd.read_csv(starname + '.csv')
     band = star_one.loc[star_one['band'] == band_filter]
 
